@@ -12,6 +12,11 @@ public abstract class Distribution {
 	private Random 		random;
 	private int keys[];
 	private double values[];
+	private int s;
+	
+	public Distribution(){
+		this.random=new Random();
+	}
 	
 	public Distribution(int from, int to){
 		this.random=new Random();
@@ -20,7 +25,7 @@ public abstract class Distribution {
 		//this.createKeyValues();
 	}
 
-	public void setType(DistType type){
+	protected void setType(DistType type){
 		this.type=type;
 	}
 	
@@ -34,6 +39,14 @@ public abstract class Distribution {
 	
 	public void setUpperBound(int value){
 		this.upper=value;
+	}
+	
+	public void setS(int s){
+		this.s=s;
+	}
+	
+	public int getS(){
+		return this.s;
 	}
 	
 	public int getLowBound(){
@@ -106,6 +119,8 @@ public abstract class Distribution {
 	 * @return 
 	 * */
 	abstract public double cdf(int x);
+	
+	
 	
 	public String toString(){
 		String buffer = new String();

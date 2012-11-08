@@ -12,6 +12,9 @@ public class Gauss extends Distribution {
 		};
 	private double mi, sigma;
 	
+	public Gauss(){
+		super();
+	};
 	public Gauss(int from, int to){
 		super(from,to);
 		this.setType(DistType.GAUSS);

@@ -18,10 +18,6 @@ public class Zipf extends Distribution {
 		return sum;
 	}
 	
-	public void setS(int s){
-		this.s=s;
-	}
-	
 	@Override
 	public double cdf(int k) {
 		k=k+this.getLowBound();
