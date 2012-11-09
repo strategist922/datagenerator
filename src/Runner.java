@@ -35,6 +35,17 @@ public class Runner {
 	public static void main(String[] args) throws IOException {
 		Runner.args=args;
 		String attributes, lines, files, distribution, s, rangesfile;
+		if(args.length==0){
+			System.out.println("Configuration file or command-line arguments are needed.");
+			System.out.println("Arguments");
+			System.out.println("\t-file\t\t<conf file>");
+			System.out.println("\t-lines\t\t<lines/file>");
+			System.out.println("\t-files\t\t<# of files>");
+			System.out.println("\t-attributes\t<# of attributes>");
+			System.out.println("\t-distribution\t<UNIFORM, GAUSS, ZIPF>");
+			System.out.println("\t-rangefile\t<file containing ranges of attributes>");
+			System.exit(1);
+		}
 		
 		if(!getValueFromArgs("-file").equals("")){
 			String conf=getValueFromArgs("-file");
