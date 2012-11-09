@@ -41,6 +41,7 @@ public class Generator {
 	public void setS(int s){
 		this.s=s;
 	}
+	
 	public void setRangesFile(String file) throws IOException{
 		BufferedReader filereader = new BufferedReader(new FileReader(file));
 		bounds = new String[this.attributes][];
@@ -93,5 +94,4 @@ public class Generator {
 			System.out.println("File "+prefix+i+".txt"+" is done!");
 		}
 	}
-
 }
