@@ -1,0 +1,6 @@
+attributes		10
+lines			10000
+files			10
+distribution	GAUSS
+s				2
+rangefile		../ranges.txt
