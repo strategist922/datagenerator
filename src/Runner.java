@@ -64,7 +64,6 @@ public class Runner {
 			s=getValueFromArgs("-s");
 			rangesfile=getValueFromArgs("-rangefile");
 		}
-//		System.out.println(attributes+"\n"+lines+"\n"+files+"\n"+distribution+"\n"+s);
 
 		Generator gen = new Generator();
 		
