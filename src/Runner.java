@@ -5,7 +5,6 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import distributions.DistType;
-/*Hrll*/
 
 public class Runner {
 
