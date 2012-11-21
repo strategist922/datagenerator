@@ -15,6 +15,12 @@ public class Uniform extends Distribution {
 		else if(x>this.getUpperBound())
 			return 1.0;
 		else
-			return 1.0*(x-this.getLowBound()+1)/(this.getUpperBound()-this.getLowBound()+1);
+			return 1.0*(x-this.getLowBound())/(this.getUpperBound()-this.getLowBound());
+	}
+	
+	public static void main(String args[]){
+		Uniform foo = new Uniform(0, 2);
+		foo.createKeyValues();
+		System.out.println(foo);
 	}
 }
